@@ -1,0 +1,471 @@
+header{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===============================
+   NAVBAR — same flexbox navbar as shopping.css
+   so the header behaves identically and responsively
+   on every page/screen size
+   =============================== */
+#navbar {
+    background-color: rgba(147, 141, 141, 0.464);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+#menu {
+    position: relative;
+}
+
+#menu button{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#menu:hover{
+    color: blueviolet;
+}
+
+#submenu {
+    display: none;
+    list-style: none;
+    border: solid black 1px;
+    width: 130px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+#menu:hover #submenu {
+    display: block;
+}
+#submenu.show-mobile {
+    display: block;
+}
+
+#submenu li {
+    padding: 8px 10px;
+}
+
+#submenu a {
+    text-decoration: none;
+    color: saddlebrown;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding-top: 10px;
+    background-color: rgba(233, 150, 122, 0);
+}
+#logo p{
+    display:inline-flex;
+    align-items: center;
+    font-size: 26px;
+    white-space: nowrap;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+}
+
+nav form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 450px;
+}
+
+nav form #searchpanel{
+    flex: 1;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+nav form #icon{
+    background-color: #ffefef00;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav form a {
+    color: black;
+    display: flex;
+}
+
+nav form a:hover {
+    color: blueviolet;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+#contact li a{
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+#contact li a:hover{
+    color: blueviolet;
+}
+
+#cart{
+    padding-left: 50px;
+}
+
+#sofa{
+    width: 500px;
+    margin-top: 50px;
+    position: relative;
+    left: 40px;
+    display: inline-block;
+}
+#sofa button img{
+    width: 400px;
+}
+#sofa button{
+    background-color: #ffefef00;
+    border-color:whitesmoke ;
+    border-top: none;
+    border-left: none;
+    background-image:url("catbt2.jpg");
+    background-size: cover;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#so{
+    font-size: 30px;
+}
+
+
+#bed{
+    width: 500px;
+    margin-top: 50px;
+    position: relative;
+    left: 40px;
+    display: inline-block;
+}
+#bed button img{
+    width: 400px;
+}
+#bed button{
+    background-color: #ffefef00;
+    background-image:url("catbt2.jpg");
+    background-size: cover;
+    border-color:whitesmoke ;
+    border-top: none;
+    border-left: none;
+    padding-top: 35px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+
+#table{
+    width: 400px;
+    margin-top: 50px;
+    position: relative;
+    left: 20px;
+    display: inline-block;
+}
+#table button img{
+    width: 400px;
+}
+#table button{
+    background-color: #ffefef00;
+    border-color:whitesmoke ;
+    border-top: none;
+    background-image:url("catbt2.jpg");
+    background-size: cover;
+    border-left: none;
+    padding-top: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+#light{
+    width: 500px;
+    margin-top: 50px;
+    position: relative;
+    left: 40px;
+    display: inline-block;
+}
+#light button img{
+    width: 400px;
+}
+#light button{
+    background-color: #ffefef00;
+    border-color:whitesmoke ;
+    border-top: none;
+    background-image:url("catbt2.jpg");
+    background-size: cover;
+    border-left: none;
+    padding-top: 55px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#couch{
+    width: 500px;
+    margin-top: 50px;
+    position: relative;
+    left: 40px;
+    display: inline-block;
+}
+#couch button img{
+    width: 400px;
+}
+#couch button{
+    background-color: #ffefef00;
+    border-color:whitesmoke ;
+    border-top: none;
+    border-left: none;
+    background-image:url("catbt2.jpg");
+    background-size: cover;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+#chair{
+    width: 400px;
+    margin-top: 50px;
+    position: relative;
+    left: 20px;
+    display: inline-block;
+}
+#chair button img{
+    width: 400px;
+}
+#chair button{
+    background-color: #ffefef00;
+    border-color:whitesmoke ;
+    border-top: none;
+    border-left: none;
+    background-image:url("catbt2.jpg");
+    background-size: cover;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+h1{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+h4{
+    color: red;
+    text-align: center;
+    padding-top: 10px;
+}
+
+body{
+    background-color: cornsilk;
+}
+
+#s img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#iccon{
+    position: relative;
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+#s{
+    background-color: #ffa45e;
+    margin-top: 10px;
+}
+*{
+    text-decoration: none;
+}
+#sec{
+    padding-bottom: 50px;
+}
+
+/* ===========================================================
+   RESPONSIVE OVERRIDES
+   Nothing above this line has been changed.
+   Same breakpoints as shopping.css so both pages reflow
+   the same way on every screen.
+=========================================================== */
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- Tablets (<=992px) ---------- */
+@media (max-width: 992px){
+    #menu{
+        order: 1;
+        width: auto;
+        float: none;
+    }
+
+    #logo{
+        order: 2;
+        width: auto;
+        margin-left: 10px;
+    }
+
+    nav{
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    nav form{
+        padding-left: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contact{
+        order: 4;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    #sofa, #bed, #table, #light, #couch, #chair{
+        width: 45%;
+        left: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #sofa button img, #bed button img, #table button img,
+    #light button img, #couch button img, #chair button img{
+        width: 100%;
+    }
+
+    #s{
+        text-align: center;
+    }
+    #s img{
+        margin-left: 20px;
+    }
+    #iccon{
+        float: none;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+/* ---------- Mobile (<=768px) ---------- */
+@media (max-width: 768px){
+    #menu{
+        width: auto;
+        float: none;
+    }
+    #menu #submenu{
+        position: absolute;
+        width: 130px;
+    }
+
+    #logo{
+        margin-left: 100px;
+    }
+
+    #contact{
+        display: none;
+    }
+
+    nav{
+        order: 3;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    nav form{
+        padding-left: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 90%;
+    }
+    nav form #searchpanel{
+        flex: 1;
+        width: auto;
+    }
+
+    h1{
+        font-size: 26px;
+        margin-top: 10px;
+    }
+    h4{
+        font-size: 16px;
+    }
+
+    #sofa, #bed, #table, #light, #couch, #chair{
+        width: 90%;
+        left: 0;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: block;
+    }
+
+    #s{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #s img{
+        margin: 10px;
+    }
+    #iccon{
+        float: none;
+        margin: 20px auto;
+        text-align: center;
+    }
+}
+
+/* ---------- Small phones (<=480px) ---------- */
+@media (max-width: 480px){
+    h1{
+        font-size: 22px;
+    }
+    #so{
+        font-size: 22px;
+    }
+    #sofa button img, #bed button img, #table button img,
+    #light button img, #couch button img, #chair button img{
+        width: 100%;
+    }
+}
