@@ -1,0 +1,424 @@
+header{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+#menu button{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    background-color: rgba(240, 255, 255, 0);
+    border: none;
+    size: 10px;
+    cursor: pointer;
+}
+
+
+#menu{
+    width:4%;
+    float: left;
+}
+#logo{
+    padding-left: 100px;
+    display: inline-block;
+}
+nav{
+    display: inline-block;
+}
+nav form #searchpanel{
+    width: 400px;
+    height: 30px;
+    background-color: #ffefef00;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+nav form{
+    padding-left: 100px;
+    position: absolute;
+    top: 10px;
+    display: inline-block;
+}
+
+nav form #favorites :hover {
+    color: blueviolet;
+}
+nav form #cart :hover {
+    color: blueviolet;
+}
+nav form #favorites{
+    color: black;
+}
+nav form #cart{
+    color: black;
+}
+#contact{
+    position: absolute;
+    top: 20px;
+    right: 100px;
+}
+#contact li{
+    padding-left: 30px;
+    display: inline-block;
+}
+#contact li a{
+    text-decoration: none;
+    color: black;
+}
+#contact li a:hover {
+    color: blueviolet;
+}
+#submenu{
+    display:none;
+}
+
+#navbar{
+    background-color: rgba(147, 141, 141, 0.464);
+    position: sticky;
+}
+
+#menu:hover {
+    color: blueviolet;
+}
+
+#submenu {
+    display: none;
+    list-style: none;
+    border: solid black 1px;
+    width: 130px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+#menu:hover #submenu {
+    display: block;
+}
+
+#submenu li {
+    padding: 8px 10px;
+}
+
+#submenu a {
+    text-decoration: none;
+    color: saddlebrown;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+nav form #icon{
+    background-color: #ffefef00;
+    border: none;
+    color: gray;
+    cursor: pointer;
+}
+
+#logo img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding-top: 10px;
+    background-color: rgba(233, 150, 122, 0);
+}
+#logo p{
+    display:inline-flex;
+    align-items: center;
+}
+#cart{
+    padding-left: 5px;
+}
+
+#slider{
+    display: inline-flex;
+    transition: 0.5s;
+}
+.one img{
+    width: 370px;
+    height:370px;
+    
+}
+#butt{
+    cursor: pointer;
+    display: inline-block;
+    width: 120px;
+    color:rgb(51, 45, 45);
+    position: relative;
+    left: 130px;
+
+}
+#sliderbox{
+    width: 370px;
+    height: 63vh;
+    margin-left: 100px;
+    margin-top: 50px;
+    overflow:hidden;
+    position: relative;
+    bottom: 100px;
+}
+
+.checked{
+    color: orange;
+}
+.two{
+    display:inline-block;
+    margin-left: 50px;
+}
+.three{
+    width:900px;
+    position: relative;
+    top: 50px;
+}
+#four{
+  padding-top: 10px;
+}
+li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background-color: cornsilk;
+}
+h2{
+    color: red;
+    display: inline-block;
+}
+h3{
+    display: inline-block;
+}
+
+#last{
+    width: 500px;
+    display: inline-block;
+    position: relative;
+    left: 50px;
+    font-size: 20px;
+    text-align: center;
+    background-color:gainsboro;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+h5{
+    padding-top: 20px;
+    font-size: 30px;
+}
+#para{
+    padding-top: 10px;
+}
+#stock{
+    padding-top: 10px;
+    color: green;
+}
+strong{
+    color: red;
+}
+.add{
+    border-radius: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: yellow;
+    cursor: pointer;
+}
+#buy{
+    margin-bottom: 20px;
+    background-color: #ffa45e;
+}
+#s img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+#iccon{
+    position: relative;
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+#s{
+    background-color: #ffa45e;
+    margin-top: 10px;
+}
+*{
+    text-decoration: none;
+}
+#sec{
+    padding-bottom: 50px;
+}
+.add:hover {
+    transform: scale(1.1);
+}
+
+/* ==============================================================
+   RESPONSIVE — tablets and small laptops
+   ============================================================== */
+@media (max-width: 900px) {
+
+    header {
+        height: auto;
+    }
+
+    #navbar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        padding: 10px;
+    }
+
+    #menu {
+        order: 1;
+        width: auto;
+        float: none;
+    }
+
+    #logo {
+        order: 2;
+        padding-left: 20px;
+    }
+
+    nav {
+        display: block;
+        width: 100%;
+        order: 3;
+    }
+
+    nav form {
+        position: static;
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    nav form #searchpanel {
+        flex: 1;
+        min-width: 0;
+    }
+
+    #contact {
+        position: static;
+        width: 100%;
+        order: 4;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 0;
+        font-size: 15px;
+    }
+
+    #contact li {
+        padding-left: 12px;
+    }
+
+    #logo p {
+        font-size: 18px;
+    }
+
+    /* product image + thumbnail slider
+       NOTE: the dot navigation in bed1.html moves the strip by a fixed
+       370px per click (translateX(-370px), -740px, ...). Scaling the
+       images themselves to 100% breaks that math, so instead we keep
+       each slide at its real size and just resize/center the box. */
+    #sliderbox {
+        width: 100%;
+        max-width: 390px;
+        height: auto;
+        margin: 20px auto;
+        position: static;
+    }
+
+    #butt {
+        position: static;
+        left: 0;
+        width: auto;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    /* product info column */
+    .two {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .three {
+        width: 100%;
+        top: 0;
+    }
+
+    /* price / add-to-cart box */
+    #last {
+        width: 90%;
+        left: 0;
+        margin: 20px auto;
+    }
+
+    #s img {
+        margin-left: 20px;
+    }
+
+    #iccon {
+        float: none;
+        margin: 15px 20px 15px 0;
+    }
+}
+
+/* ==============================================================
+   RESPONSIVE — phones
+   ============================================================== */
+@media (max-width: 600px) {
+
+    #logo {
+        padding-left: 175px;
+    }
+
+    #logo p {
+        font-size: 18px;
+    }
+
+    nav form #searchpanel {
+        width: 100%;
+    }
+
+    #contact {
+        display: none;
+    }
+
+    #last {
+        width: 95%;
+        font-size: 16px;
+    }
+
+    .add {
+        padding-left: 25px;
+        padding-right: 25px;
+        width: 80%;
+    }
+
+    #s {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #iccon {
+        width: 100%;
+        margin: 10px 0 0;
+        display: flex;
+        justify-content: right;
+        float: none;
+    }
+}

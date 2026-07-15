@@ -1,0 +1,832 @@
+header{
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url("p.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 750px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* ===============================
+   NAVBAR — flexbox instead of
+   absolute/fixed positioning
+   =============================== */
+#navbar {
+    background-color: rgba(147, 141, 141, 0.464);
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    gap: 20px;
+}
+
+#menu {
+    position: relative;
+}
+
+#menu button {
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+#menu:hover {
+    color: blueviolet;
+}
+
+#submenu {
+    display: none;
+    list-style: none;
+    border: solid black 1px;
+    width: 130px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    
+}
+
+#menu:hover #submenu {
+    display: block;
+}
+
+#submenu li {
+    padding: 8px 10px;
+}
+
+#submenu a {
+    text-decoration: none;
+    color: saddlebrown;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo img {
+    width: 50px;
+    height: 50px;
+}
+
+#logo p {
+    font-size: 26px;
+    white-space: nowrap;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    min-width: 200px;
+}
+
+nav form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    max-width: 450px;
+}
+
+nav form #searchpanel {
+    flex: 1;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+nav form #icon {
+    background-color: transparent;
+    border: none;
+    color: gray;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+nav form a {
+    color: black;
+    display: flex;
+}
+
+nav form a:hover {
+    color: blueviolet;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+#contact li a {
+    text-decoration: none;
+    color: black;
+    white-space: nowrap;
+}
+
+#contact li a:hover {
+    color: blueviolet;
+}
+
+#logo img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    padding-top: 10px;
+    background-color: rgba(233, 150, 122, 0);
+}
+#logo p{
+    display:inline-flex;
+    align-items: center;
+}
+
+
+#home #par{
+    display: inline block;
+    position: relative;
+    top: 200px;
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif;
+    font-size: 50px;
+    color: red;
+    width:500px;
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+nav form #icon{
+    background-color: #ffefef00;
+    border: none;
+    color: gray;
+    cursor: pointer;
+}
+
+
+#slider{
+    
+    display: inline-flex;
+    
+    transition: 0.5s;
+    
+    
+}
+#slider img{
+    width: 100%;
+    height: 500px;
+    
+}
+#butt{
+    cursor: pointer;
+    display: inline-block;
+    width: 200px;
+    color: black;
+    position: absolute;
+    top: 350px;
+    left: 300px;
+}
+#sliderbox{
+    width: 800px;
+    height: 55vh;
+    margin-left: 650px;
+    margin-top: 150px;
+    margin-right: 100px;
+    
+    overflow:hidden;
+}
+p{
+    font-size: small;
+}
+
+
+#shopnow{
+    background-color: palevioletred;
+    border-color: pink ;
+}
+#shopnow a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+h1{
+    margin:10px ;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Merriweather', serif;
+}
+#pop{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+#sofa{
+    width: 500px;
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    left: 40px;
+}
+#sofa button img{
+    width: 400px;
+}
+#sofa button{
+    background-color: #ffefef00;
+    border-color:whitesmoke ;
+    border-top: none;
+    border-left: none;
+}
+#so{
+    font-size: 30px;
+}
+
+
+#bed{
+    width: 500px;
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    left: 40px;
+}
+#bed button img{
+    width: 400px;
+}
+#bed button{
+    background-color: #ffefef00;
+    border-color:whitesmoke ;
+    border-top: none;
+    border-left: none;
+    padding-top: 35px;
+}
+
+
+
+#table{
+    width: 400px;
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    left: 20px;
+}
+#table button img{
+    width: 400px;
+}
+#table button{
+    background-color: #ffefef00;
+    border-color:whitesmoke ;
+    border-top: none;
+    border-left: none;
+    padding-top: 35px;
+}
+
+
+#light{
+    width: 500px;
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    left: 40px;
+}
+#light button img{
+    width: 400px;
+}
+#light button{
+    background-color: #ffefef00;
+    border-color:whitesmoke ;
+    border-top: none;
+    border-left: none;
+    padding-top: 55px;
+}
+
+#couch{
+    width: 500px;
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    left: 40px;
+}
+#couch button img{
+    width: 400px;
+}
+#couch button{
+    background-color: #ffefef00;
+    border-color:whitesmoke ;
+    border-top: none;
+    border-left: none;
+}
+
+#chair{
+    width: 400px;
+    margin-top: 50px;
+    position: relative;
+    display: inline-block;
+    left: 20px;
+}
+#chair button img{
+    width: 400px;
+}
+#chair button{
+    background-color: #ffefef00;
+    border-color:whitesmoke ;
+    border-top: none;
+    border-left: none;
+}
+
+#checkout{
+    margin-left: 650px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    border-color: whitesmoke;
+    background-color: whitesmoke;
+}
+#checkout a{
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+#sec{
+    background-color: cornsilk;
+}
+
+#qual{
+    margin-top: 10px;
+    padding-top: 100px;
+    padding-right: 100px;
+    padding-left:300px;
+    padding-bottom: 20px;
+    background-color: #ffa45e;
+}
+#qual p{
+    color: grey;
+}
+
+#d{
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    font-size:20px;
+    padding-right: 20px;
+}
+
+#p{
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    font-size:20px;
+    padding-right: 20px;
+}
+#moneyback{
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    font-size:20px;
+    padding-right: 20px;
+}
+#s{
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    font-size:20px;
+    padding-right: 20px;
+}
+
+#ab img{
+    width: 900px;
+    height: 600px;
+    display: inline-block;
+}
+
+#best{
+    width: 600px;
+    position: relative;
+    
+    bottom: 200px;
+    display: inline-block;
+}
+
+#best h3{
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 40px;
+}
+#best p{
+    font-size: 20px;
+    padding-left: 40px;
+}
+#ab{
+    background-color: cornsilk;
+    margin-top: 10px;
+}
+
+#first img{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+#sp #spp{
+    width: 500px;
+    
+    margin-top: 20px;
+}
+#iccon{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#first{
+    width:600px;
+    display: inline-block;
+}
+#second{
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    bottom: 120px;
+}
+h5{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ul li{
+    list-style:none;
+    font-size: 15px;
+    color: darkblue;
+    cursor: pointer;
+}
+#third{
+    width: 250px;
+    display: inline-block;
+    position: relative;
+    bottom: 105px;
+}
+#four{
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    bottom: 194px;
+}
+#five{
+    width: 200px;
+    display: inline-block;
+    position: relative;
+    bottom: 160px;
+}
+#support{
+    background-color: #ffa45e;
+}
+#browse{
+    margin-top: 20px;
+    font-size: 30px;
+    border-color: whitesmoke;
+    background-color: #ffa45e;
+    margin-left: 40px;
+}
+#browse a{
+    text-decoration: none;
+    color: white;
+}
+#browse a:hover{
+    color: black;
+}
+*{
+    text-decoration: none;
+}
+
+/* ===========================================================
+   RESPONSIVE OVERRIDES
+   Nothing above this line has been changed.
+   These media queries only override values at smaller widths
+   so the exact same design reflows neatly on any screen.
+=========================================================== */
+
+/* Make everything fluid by default so fixed-px items never
+   force horizontal scrolling on small screens */
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------- Large tablets / small laptops (<=1200px) ---------- */
+@media (max-width: 900px){
+    header{
+        height: auto;
+        min-height: 60vh;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    #home{
+        width: 100%;
+        order: 5;
+    }
+    #home #par{
+        position: static;
+        left: auto;
+        top: auto;
+        width: 70%;
+        margin: 30px auto 0;
+        font-size: 40px;
+    }
+    #butt{
+        position: static;
+        left: auto;
+        top: auto;
+        margin: 20px auto 0;
+        text-align: center;
+    }
+    #sliderbox{
+        order: 6;
+        margin-left: 40px;
+        margin-top: 40px;
+        margin-right: 40px;
+        width: auto;
+        max-width: 800px;
+    }
+    #slider img{
+        width: 100%;
+        height: auto;
+    }
+    #checkout{
+        justify-content: center;
+    }
+    #qual{
+        padding-left: 100px;
+        padding-right: 40px;
+    }
+    #ab img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ---------- Tablets (<=992px) ---------- */
+@media (max-width: 992px){
+    #menu{
+        order: 1;
+        width: auto;
+        float: none;
+    }
+
+    #logo{
+        order: 2;
+        width: auto;
+        margin-left: 10px;
+    }
+
+    nav{
+        order: 3;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    nav form{
+        padding-left: 20px;
+        position: static;
+        top: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contact{
+        order: 4;
+        width: 100%;
+        position: static;
+        top: auto;
+        right: auto;
+        text-align: center;
+        padding: 10px 0;
+    }
+    #navbar{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #home #par{
+        font-size: 32px;
+        width: 80%;
+    }
+    #sofa, #bed, #table, #light, #couch, #chair{
+        width: 45%;
+        left: 0;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    #sofa button img, #bed button img, #table button img,
+    #light button img, #couch button img, #chair button img{
+        width: 100%;
+    }
+    #ab{
+        text-align: center;
+    }
+    #best{
+        width: 90%;
+        bottom: 0;
+        margin: 0 auto;
+    }
+    #first, #second, #third, #four, #five{
+        width: 45%;
+        bottom: 0;
+        margin-bottom: 20px;
+    }
+    #sp #spp{
+        width: 90%;
+    }
+}
+
+/* ---------- Mobile (<=768px) ---------- */
+@media (max-width: 768px){
+    header{
+        height: auto;
+        min-height: auto;
+        padding-bottom: 20px;
+    }
+    #menu{
+        width: auto;
+        float: none;
+    }
+    #menu #submenu{
+        position: absolute;
+        width: 130px;
+    }
+
+    #logo{
+        margin-left: 100px;
+    }
+
+    #contact{
+        display: none;
+    }
+
+    nav{
+        order: 3;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    nav form{
+        padding-left: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 90%;
+    }
+    nav form #searchpanel{
+        flex: 1;
+        width: auto;
+    }
+    #home #par{
+        position: static;
+        font-size: 24px;
+        left: auto;
+        top: auto;
+        width: 90%;
+        margin: 20px auto 0;
+    }
+    #butt{
+        position: static;
+        top: auto;
+        left: auto;
+        width: auto;
+        margin: 15px auto 0;
+        text-align: center;
+    }
+    #sliderbox{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        width: 90%;
+        height: auto;
+    }
+    h1{
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    #pop{
+        font-size: 20px;
+    }
+    #sofa, #bed, #table, #light, #couch, #chair{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: block;
+    }
+    #checkout{
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+    #qual{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 40px;
+    }
+    #d, #p, #moneyback, #s{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 20px;
+        padding-right: 0;
+    }
+    #best h3{
+        font-size: 32px;
+        padding-left: 10px;
+    }
+    #best p{
+        padding-left: 10px;
+    }
+    #first, #second, #third, #four, #five{
+        width: 100%;
+        display: block;
+        bottom: 0;
+        text-align: center;
+    }
+    #first img{
+        margin-left: 0;
+    }
+    #iccon{
+        margin-left: 0;
+        text-align: center;
+    }
+    #browse{
+        margin-left: 15px;
+        font-size: 22px;
+    }
+}
+
+/* ---------- Small phones (<=480px) ---------- */
+@media (max-width: 480px){
+    header{
+        height: auto;
+        min-height: auto;
+    }
+    #home #par{
+        position: static;
+        font-size: 18px;
+        top: auto;
+        left: auto;
+        width: 92%;
+        margin: 15px auto 0;
+    }
+    #butt{
+        position: static;
+        font-size: 14px;
+        top: auto;
+        left: auto;
+        margin: 10px auto 0;
+    }
+    #sliderbox{
+        width: 92%;
+        height: auto;
+    }
+    h1{
+        font-size: 24px;
+    }
+    #pop{
+        font-size: 16px;
+    }
+    #checkout a{
+        font-size: 20px;
+    }
+    #best h3{
+        font-size: 24px;
+    }
+    #so{
+        font-size: 22px;
+    }
+}
+#sp{
+    text-align: left;
+}
